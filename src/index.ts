@@ -1,5 +1,5 @@
 {
-    // -------------------> problem 1 Start ----------------------->
+
 
     function formatString(input: string, toUpper?: boolean): string {
         if (toUpper !== false) {
@@ -11,13 +11,9 @@
 
     formatString("siam")
 
-     // -------------------> problem 1 End ----------------------->
 
 
-      // -------------------> problem 2 Start ----------------------->
-
-
-      function filterByRating(items: { title: string; rating: number }[]):{ title: string; rating: number }[]{
+    function filterByRating(items: { title: string; rating: number }[]):{ title: string; rating: number }[]{
 
         return items.filter((item) => item.rating >= 4)
         
@@ -30,20 +26,12 @@
 
       filterByRating(books)
       
-      // -------------------> problem 2 end----------------------->
-
-
-      // -------------------> problem 3 Start ----------------------->
 
       function concatenateArrays<T>(...arrays: T[][]): T[] {
         return arrays.reduce((frist , secend) => frist.concat(secend) , [])
       }
       
-       // -------------------> problem 3 end ----------------------->
-
-
-        // -------------------> problem 4 Start ----------------------->
-
+  
         class Vehicle {
            private make : string
            private year : number
@@ -76,9 +64,7 @@
         myCar.getInfo()
         myCar.getModel()
 
-        // -------------------> problem 4 end ----------------------->
 
-        // -------------------> problem 5 start----------------------->
 
         function processValue(value: string | number): number {
             if(typeof value === "string"){
@@ -92,11 +78,6 @@
         processValue("hello"); 
         processValue(10);
 
-        // -------------------> problem 5 end----------------------->
-
-
-
-        // -------------------> problem 6 start----------------------->
 
 
         interface Product {
@@ -128,9 +109,6 @@
           
           getMostExpensiveProduct(products);  
 
-      // -------------------> problem 6 end-----------------------> 
-
-      // -------------------> problem 7 start----------------------->
       
       enum Day {
         Monday,
@@ -154,9 +132,7 @@
 
       getDayType(Day.Sunday); 
 
-     // -------------------> problem 7 end----------------------->
 
-    // -------------------> problem 8 start----------------------->
 
     async function squareAsync(n: number): Promise<number> {
         return new Promise((resolve, reject) => {
@@ -173,6 +149,6 @@
       squareAsync(4).then(console.log);     
     squareAsync(-3).catch(console.error); 
 
-// -------------------> problem 8 end----------------------->
+
 
 }
